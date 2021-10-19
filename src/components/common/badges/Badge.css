@@ -1,0 +1,111 @@
+/* Badges */
+.bg {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.2rem 2rem;
+  white-space: nowrap;
+}
+
+.bg--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.bg--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.bg--small {
+  font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .bg {
+    font-size: 1.5rem;
+  }
+
+  .bg--small {
+    font-size: 1.2rem;
+  }
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ca2a02;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #0054ff;
+  color: #fff;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--streched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}

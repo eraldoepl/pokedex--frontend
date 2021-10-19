@@ -1,0 +1,78 @@
+.PokeDetails {
+  max-height: 40rem;
+  overflow: scroll;
+  text-transform: capitalize;
+}
+
+.PokeDetails__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.PokeDetails__header > h2 {
+  padding-left: 3rem;
+  margin: 0;
+}
+
+.pokemon__image--blue {
+  background: lightblue;
+}
+
+.PokeDetails__list-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.PokeDetails__list-arrow .list--arrow::before {
+  content: "-->";
+  padding: 0 1rem;
+  color: var(--color-headings);
+}
+
+.PokeDetails__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PokeDetails__body--multiple {
+  display: flex;
+  flex-direction: column;
+}
+
+.PokeDetails__list__header,
+.PokeDetails__body > p {
+  margin: 0;
+}
+
+.PokeDetails__body > header {
+  display: flex;
+}
+
+.PokeDetails__body__header {
+  display: flex;
+  align-items: center;
+}
+
+.PokeDetails__multiple .list--arrow {
+  padding-left: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .PokeDetails__header {
+    flex-direction: row;
+  }
+  .PokeDetails__multiple {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .PokeDetails__multiple {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
